@@ -1,0 +1,433 @@
+/*
+
+  starter code
+
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+
+  begin main styling
+
+  */
+
+body {
+  /* whole page background color */
+  background-color: #121212;
+}
+
+li {
+  /* remove ugly bullet points */
+  list-style-type: none;
+}
+
+.header__element-anchor-img {
+  /* styling for the header image */
+  max-width: 25rem;
+  border-radius: 50px;
+  border: 1px solid #363a3c;
+}
+
+.nav {
+  /* centering the navigation */
+  display: flex;
+  justify-content: center;
+  border: 1px solid #363a3c;
+  padding: 12px 0px;
+}
+
+.nav__elements {
+  /* spacing the navigation elements so they don't kiss */
+  padding: 0px 8px;
+}
+
+.nav__elements-group {
+  /* organizing the navigation elements so they are in a row instead of a column, padding navigation bar from top of screen and elements below */
+  display: flex;
+  align-items: center;
+}
+
+.nav__element-anchor {
+  /* navigation anchor text styling */
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #6fc4fa;
+  transition: ease 500ms;
+}
+
+.nav__element-anchor:hover {
+  color: #fff;
+  transition: ease 300ms;
+}
+
+.logo {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.logo_element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__elements-group {
+  /* organizing the header elements so they're side by side properly */
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #151515;
+  overflow: hidden;
+}
+
+.header__elements {
+  padding: 24px 64px 24px 64px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0;
+  padding: 12px;
+}
+
+.header__element-anchor {
+  /* header anchor text styling */
+  color: #e0e0e0;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.header__element-anchor-subtext {
+  /* header anchor subtext text styling */
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.splash__img-wrapper {
+  overflow: hidden;
+}
+
+.splash-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 44vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/pexels-lumn-614710.jpg");
+}
+
+.splash-text {
+  color: white;
+  font-size: 24px;
+}
+
+.blue {
+  color: #3ab0f6;
+}
+
+.splash__elements-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* this align items is for the button */
+  align-items: center;
+  text-align: center;
+}
+
+.btn-wrapper-splash {
+  display: flex;
+  justify-content: center;
+}
+
+.splash-center {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 12px;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 12px;
+  background-color: #092b48;
+  border-radius: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+/* Add these styles to your existing CSS */
+
+.contact-section {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  padding: 40px 0;
+}
+
+.contact__wrapper {
+  text-align: center;
+}
+
+.contact__btn {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #363a3c;
+  border-radius: 8px;
+}
+
+.send-email {
+  background-color: #092b48;
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-email:hover {
+  background-color: #3ab0f6;
+}
+
+.btn-wrapper-splash:active {
+  margin-top: -1px;
+  margin-bottom: 1px;
+}
+
+.btn:active {
+  color: #e0e0e0;
+}
+
+.contact {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.send-btn {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: none;
+}
+
+.contact__btn {
+  display: flex;
+  justify-content: center;
+  color: #e0e0e0;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #363a3c;
+  padding: 10px 0px;
+}
+
+.footer__element-anchor {
+  /* navigation anchor text styling */
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #6fc4fa;
+  transition: ease 300ms;
+}
+
+.footer__elements-group {
+  display: block;
+  flex-direction: row;
+  padding: 24px;
+}
+
+.footer.footer {
+  background-color: #121212;
+}
+
+.footer__element-anchor:hover {
+  color: #fff;
+  transition: ease 300ms;
+}
+
+/* Add these styles to your existing CSS */
+
+.footer {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__elements-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__element-anchor {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #6fc4fa;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.footer__element-anchor:hover {
+  color: #fff;
+}
+
+.footer__element-anchor.logo {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.footer__social-icons {
+  margin-top: 20px;
+}
+
+.footer__social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #6fc4fa;
+  transition: color 0.3s ease;
+}
+
+.footer__social-icon:hover {
+  color: #fff;
+}
+
+.footer__copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 768px) {
+  .footer__element-anchor {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .footer__element-anchor.logo {
+    font-size: 20px;
+  }
+
+  .footer__social-icons {
+    margin-top: 15px;
+  }
+
+  .footer__social-icon {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6fc4fa;
+  border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 576px) {
+  .header__elements-group {
+    /* organizing the header elements so they're side by side properly */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #151515;
+    overflow: hidden;
+    padding: 32px;
+  }
+
+  .nav__element-anchor {
+    /* navigation anchor text styling */
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #6fc4fa;
+    transition: ease 300ms;
+  }
+
+  .nav {
+    /* centering the navigation */
+    display: flex;
+    justify-content: center;
+    border: 1px solid #363a3c;
+    padding: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header__elements-group {
+    /* organizing the header elements so they're side by side properly */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #151515;
+    overflow: hidden;
+    padding: 64px;
+  }
+
+  .header__element-anchor-img {
+    /* styling for the header image */
+    max-width: 25rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px #ffffff4b;
+  }
+
+  .splash-art {
+    width: 100%;
+    max-width: 100%;
+    height: calc(44vh + 4px);
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 100% 50%;
+  }
+}
